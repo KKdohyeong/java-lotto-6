@@ -8,19 +8,18 @@ static으로 전역으로 넘겨서 어디든 접근 가능하게 하고
 
 import lotto.model.LottoMoney;
 
-import java.io.Console;
+import camp.nextstep.edu.missionutils.Console;
 
 public class InputView {
     private static final String errorMessageGetMoney = "[ERROR] : money is error";
-    Console console = System.console();
-    LottoMoney getBuyMoney(){
+    public LottoMoney getBuyMoney(){
         LottoMoney lottoMoney =null;
         while(lottoMoney == null){
             try{
-                lottoMoney = new LottoMoney(console.readLine());
+                lottoMoney = new LottoMoney(Console.readLine());
             }
             catch(IllegalArgumentException e){
-                console.printf(errorMessageGetMoney);
+                System.out.println(errorMessageGetMoney);
             }
         }
         return lottoMoney;
