@@ -15,6 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  */
 
 public class LottoMoneyTest {
+
     @DisplayName("1,000원을 저장했을 때 저장되는지 확인")
     @Test
     void moneySave(){
@@ -56,4 +57,6 @@ public class LottoMoneyTest {
         //then
 
     }
+
+     
 }
