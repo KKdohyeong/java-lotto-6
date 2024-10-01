@@ -9,7 +9,10 @@ public class LottoCreate {
     public List<Integer> makeLottoMoney(){
         List<Integer> lotto = Randoms.pickUniqueNumbersInRange(1, 45, 6);
         Collections.sort(lotto);
+
         return lotto;
     }
+
+
 
 }
